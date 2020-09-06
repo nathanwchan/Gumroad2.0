@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		C1718BB225045750003A1AF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BB125045750003A1AF3 /* AppDelegate.swift */; };
 		C1718BB425045750003A1AF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BB325045750003A1AF3 /* SceneDelegate.swift */; };
-		C1718BB625045750003A1AF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BB525045750003A1AF3 /* ViewController.swift */; };
-		C1718BB925045750003A1AF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1718BB725045750003A1AF3 /* Main.storyboard */; };
+		C1718BB625045750003A1AF3 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BB525045750003A1AF3 /* LaunchViewController.swift */; };
+		C1718BB925045750003A1AF3 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1718BB725045750003A1AF3 /* Authentication.storyboard */; };
 		C1718BBB25045754003A1AF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1718BBA25045754003A1AF3 /* Assets.xcassets */; };
 		C1718BBE25045754003A1AF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1718BBC25045754003A1AF3 /* LaunchScreen.storyboard */; };
+		C1718BCB25046826003A1AF3 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BCA25046826003A1AF3 /* AuthenticationViewController.swift */; };
+		C1718BCD2504684B003A1AF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1718BCC2504684B003A1AF3 /* Main.storyboard */; };
+		C1718BCF2504697F003A1AF3 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BCE2504697F003A1AF3 /* StoryboardIdentifiable.swift */; };
+		C1718BD2250469B5003A1AF3 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BD1250469B5003A1AF3 /* StringExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C1718BAE25045750003A1AF3 /* Gumroad 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gumroad 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1718BB125045750003A1AF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1718BB325045750003A1AF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C1718BB525045750003A1AF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C1718BB825045750003A1AF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1718BB525045750003A1AF3 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		C1718BB825045750003A1AF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Authentication.storyboard; sourceTree = "<group>"; };
 		C1718BBA25045754003A1AF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1718BBD25045754003A1AF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1718BBF25045754003A1AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1718BCA25046826003A1AF3 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		C1718BCC2504684B003A1AF3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C1718BCE2504697F003A1AF3 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
+		C1718BD1250469B5003A1AF3 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,41 @@
 			children = (
 				C1718BB125045750003A1AF3 /* AppDelegate.swift */,
 				C1718BB325045750003A1AF3 /* SceneDelegate.swift */,
-				C1718BB525045750003A1AF3 /* ViewController.swift */,
-				C1718BB725045750003A1AF3 /* Main.storyboard */,
+				C1718BC9250467F1003A1AF3 /* Authentication */,
+				C1718BC825045ED7003A1AF3 /* Main */,
+				C1718BD0250469A8003A1AF3 /* Utilities */,
 				C1718BBA25045754003A1AF3 /* Assets.xcassets */,
 				C1718BBC25045754003A1AF3 /* LaunchScreen.storyboard */,
 				C1718BBF25045754003A1AF3 /* Info.plist */,
 			);
 			path = "Gumroad 2.0";
+			sourceTree = "<group>";
+		};
+		C1718BC825045ED7003A1AF3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C1718BCC2504684B003A1AF3 /* Main.storyboard */,
+				C1718BB525045750003A1AF3 /* LaunchViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C1718BC9250467F1003A1AF3 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C1718BB725045750003A1AF3 /* Authentication.storyboard */,
+				C1718BCA25046826003A1AF3 /* AuthenticationViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		C1718BD0250469A8003A1AF3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C1718BCE2504697F003A1AF3 /* StoryboardIdentifiable.swift */,
+				C1718BD1250469B5003A1AF3 /* StringExtensions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +162,8 @@
 			files = (
 				C1718BBE25045754003A1AF3 /* LaunchScreen.storyboard in Resources */,
 				C1718BBB25045754003A1AF3 /* Assets.xcassets in Resources */,
-				C1718BB925045750003A1AF3 /* Main.storyboard in Resources */,
+				C1718BB925045750003A1AF3 /* Authentication.storyboard in Resources */,
+				C1718BCD2504684B003A1AF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,21 +174,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1718BB625045750003A1AF3 /* ViewController.swift in Sources */,
+				C1718BD2250469B5003A1AF3 /* StringExtensions.swift in Sources */,
+				C1718BCB25046826003A1AF3 /* AuthenticationViewController.swift in Sources */,
+				C1718BB625045750003A1AF3 /* LaunchViewController.swift in Sources */,
 				C1718BB225045750003A1AF3 /* AppDelegate.swift in Sources */,
 				C1718BB425045750003A1AF3 /* SceneDelegate.swift in Sources */,
+				C1718BCF2504697F003A1AF3 /* StoryboardIdentifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C1718BB725045750003A1AF3 /* Main.storyboard */ = {
+		C1718BB725045750003A1AF3 /* Authentication.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C1718BB825045750003A1AF3 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Authentication.storyboard;
 			sourceTree = "<group>";
 		};
 		C1718BBC25045754003A1AF3 /* LaunchScreen.storyboard */ = {

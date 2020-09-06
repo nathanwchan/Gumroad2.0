@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Authentication View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="AuthenticationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="AuthenticationViewController" customModule="Gumroad_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gumroad 2.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7be-gI-nuU">
+                                <rect key="frame" x="66.5" y="164" width="281" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is where you read, listen to, and watch the many fine things you've found via Gumroad." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpt-gD-g8E">
+                                <rect key="frame" x="31" y="422.5" width="352" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLk-wL-DmA">
+                                <rect key="frame" x="103.5" y="732" width="207" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JJZ-VA-cwb"/>
+                                </constraints>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.20392156859999999" green="0.63529411759999999" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9r-g1-1Dl">
+                                <rect key="frame" x="103.5" y="792" width="207" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.63529411764705879" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="X9r-g1-1Dl" firstAttribute="top" secondItem="mLk-wL-DmA" secondAttribute="bottom" constant="20" id="3lj-8p-gTa"/>
+                            <constraint firstItem="X9r-g1-1Dl" firstAttribute="height" secondItem="mLk-wL-DmA" secondAttribute="height" id="8Bs-Ju-rUx"/>
+                            <constraint firstItem="7be-gI-nuU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="C4N-bQ-7ux"/>
+                            <constraint firstItem="Wpt-gD-g8E" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="FNz-xj-E8D"/>
+                            <constraint firstItem="X9r-g1-1Dl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GER-zd-nkB"/>
+                            <constraint firstItem="mLk-wL-DmA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="KAQ-X6-r5D"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X9r-g1-1Dl" secondAttribute="bottom" constant="30" id="bKg-98-tKW"/>
+                            <constraint firstItem="Wpt-gD-g8E" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cGM-Nc-fYG"/>
+                            <constraint firstItem="mLk-wL-DmA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="ceU-CO-3k2"/>
+                            <constraint firstItem="Wpt-gD-g8E" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.85" id="fkF-Hb-Fvr"/>
+                            <constraint firstItem="7be-gI-nuU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gBd-Xm-AZN"/>
+                            <constraint firstItem="X9r-g1-1Dl" firstAttribute="width" secondItem="mLk-wL-DmA" secondAttribute="width" id="hZR-V3-Inv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
