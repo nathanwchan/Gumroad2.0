@@ -12,11 +12,13 @@ class LaunchViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        let vc = AuthenticationViewController.instantiate()
+        let vc: UIViewController
+        if UserDefaults.standard.bool(forKey: Globals.AuthTokenUserDefaultsKey) {
+            vc = MainViewController.instantiate()
+        } else {
+            vc = AuthenticationViewController.instantiate()
+        }
         let navVC = UINavigationController(rootViewController: vc)
-
-//        let vc = MainMenuViewController.instantiate()
-//        let navVC = MainActivityNavigationController(rootViewController: vc)
 
         navVC.modalPresentationStyle = .fullScreen
         navVC.setNavigationBarHidden(true, animated: false)

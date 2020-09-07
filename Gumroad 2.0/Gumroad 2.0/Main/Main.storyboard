@@ -22,5 +22,35 @@
             </objects>
             <point key="canvasLocation" x="151" y="89"/>
         </scene>
+        <!--Main View Controller-->
+        <scene sceneID="alc-yB-IWN">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AK8-71-Ibn" customClass="MainViewController" customModule="Gumroad_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OOK-89-0pB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SE3-2T-fCz">
+                                <rect key="frame" x="351" y="44" width="48" height="30"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutClicked:" destination="AK8-71-Ibn" eventType="touchUpInside" id="TlD-0b-dh7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156859999999" green="0.63529411759999999" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Mkq-Vh-2gq" firstAttribute="trailing" secondItem="SE3-2T-fCz" secondAttribute="trailing" constant="15" id="Tkl-4A-pTj"/>
+                            <constraint firstItem="SE3-2T-fCz" firstAttribute="top" secondItem="Mkq-Vh-2gq" secondAttribute="top" id="Z6W-Z1-RzL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mkq-Vh-2gq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SLk-8b-GdB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1093" y="88"/>
+        </scene>
     </scenes>
 </document>

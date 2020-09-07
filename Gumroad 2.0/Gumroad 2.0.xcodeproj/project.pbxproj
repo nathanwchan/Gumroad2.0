@@ -17,6 +17,9 @@
 		C1718BCD2504684B003A1AF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1718BCC2504684B003A1AF3 /* Main.storyboard */; };
 		C1718BCF2504697F003A1AF3 /* StoryboardIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BCE2504697F003A1AF3 /* StoryboardIdentifiable.swift */; };
 		C1718BD2250469B5003A1AF3 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BD1250469B5003A1AF3 /* StringExtensions.swift */; };
+		C1718BD42506DE83003A1AF3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BD32506DE83003A1AF3 /* LoginViewController.swift */; };
+		C1718BD62506DEF9003A1AF3 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BD52506DEF9003A1AF3 /* Utilities.swift */; };
+		C1718BD82506E046003A1AF3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BD72506E046003A1AF3 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		C1718BCC2504684B003A1AF3 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C1718BCE2504697F003A1AF3 /* StoryboardIdentifiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardIdentifiable.swift; sourceTree = "<group>"; };
 		C1718BD1250469B5003A1AF3 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		C1718BD32506DE83003A1AF3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C1718BD52506DEF9003A1AF3 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		C1718BD72506E046003A1AF3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +74,7 @@
 				C1718BB325045750003A1AF3 /* SceneDelegate.swift */,
 				C1718BC9250467F1003A1AF3 /* Authentication */,
 				C1718BC825045ED7003A1AF3 /* Main */,
-				C1718BD0250469A8003A1AF3 /* Utilities */,
+				C1718BD0250469A8003A1AF3 /* Helpers */,
 				C1718BBA25045754003A1AF3 /* Assets.xcassets */,
 				C1718BBC25045754003A1AF3 /* LaunchScreen.storyboard */,
 				C1718BBF25045754003A1AF3 /* Info.plist */,
@@ -81,6 +87,7 @@
 			children = (
 				C1718BCC2504684B003A1AF3 /* Main.storyboard */,
 				C1718BB525045750003A1AF3 /* LaunchViewController.swift */,
+				C1718BD72506E046003A1AF3 /* MainViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -90,17 +97,19 @@
 			children = (
 				C1718BB725045750003A1AF3 /* Authentication.storyboard */,
 				C1718BCA25046826003A1AF3 /* AuthenticationViewController.swift */,
+				C1718BD32506DE83003A1AF3 /* LoginViewController.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
 		};
-		C1718BD0250469A8003A1AF3 /* Utilities */ = {
+		C1718BD0250469A8003A1AF3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C1718BD52506DEF9003A1AF3 /* Utilities.swift */,
 				C1718BCE2504697F003A1AF3 /* StoryboardIdentifiable.swift */,
 				C1718BD1250469B5003A1AF3 /* StringExtensions.swift */,
 			);
-			path = Utilities;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,11 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1718BD42506DE83003A1AF3 /* LoginViewController.swift in Sources */,
 				C1718BD2250469B5003A1AF3 /* StringExtensions.swift in Sources */,
 				C1718BCB25046826003A1AF3 /* AuthenticationViewController.swift in Sources */,
 				C1718BB625045750003A1AF3 /* LaunchViewController.swift in Sources */,
 				C1718BB225045750003A1AF3 /* AppDelegate.swift in Sources */,
 				C1718BB425045750003A1AF3 /* SceneDelegate.swift in Sources */,
+				C1718BD82506E046003A1AF3 /* MainViewController.swift in Sources */,
+				C1718BD62506DEF9003A1AF3 /* Utilities.swift in Sources */,
 				C1718BCF2504697F003A1AF3 /* StoryboardIdentifiable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
