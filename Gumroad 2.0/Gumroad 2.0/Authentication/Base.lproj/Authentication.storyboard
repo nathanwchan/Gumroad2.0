@@ -36,6 +36,11 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.20392156859999999" green="0.63529411759999999" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9r-g1-1Dl">
                                 <rect key="frame" x="103.5" y="792" width="207" height="40"/>
@@ -43,6 +48,9 @@
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Cov-wo-9oV" kind="show" id="b51-Nn-mCM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.63529411764705879" blue="0.65098039215686276" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,5 +75,112 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="k5L-gJ-gsJ">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Cov-wo-9oV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0v1-ir-Dhj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Df7-Xw-ano">
+                                <rect key="frame" x="41.5" y="275.5" width="331" height="355"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="omH-zi-sjE">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="54.5"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csB-Hp-2U5">
+                                                <rect key="frame" x="0.0" y="0.0" width="158" height="54.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="csB-Hp-2U5" secondAttribute="height" multiplier="2.9" id="9ae-1v-iWV"/>
+                                                </constraints>
+                                                <state key="normal" backgroundImage="twitter"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2U-AM-pWJ">
+                                                <rect key="frame" x="173" y="0.0" width="158" height="54.5"/>
+                                                <state key="normal" backgroundImage="facebook"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="────  or login with email  ────" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cNg-vC-YOr">
+                                        <rect key="frame" x="19.5" y="74.5" width="292.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.88159640330188682" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ll-Ao-g51">
+                                        <rect key="frame" x="0.0" y="115" width="331" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ynm-Ch-rjU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="  Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WT3-YS-zHv">
+                                        <rect key="frame" x="0.0" y="185" width="331" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="nQp-wV-Scp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTT-XN-ZeA">
+                                        <rect key="frame" x="0.0" y="255" width="331" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="W07-fg-Ijt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <state key="normal" title="Log in">
+                                            <color key="titleColor" red="0.20392156859999999" green="0.63529411759999999" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pra-QM-WMY">
+                                        <rect key="frame" x="93.5" y="325" width="144" height="30"/>
+                                        <state key="normal" title="I forgot my password">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6ll-Ao-g51" firstAttribute="width" secondItem="Df7-Xw-ano" secondAttribute="width" id="V47-dp-XlJ"/>
+                                    <constraint firstItem="XTT-XN-ZeA" firstAttribute="width" secondItem="Df7-Xw-ano" secondAttribute="width" id="bh3-TL-VaU"/>
+                                    <constraint firstItem="WT3-YS-zHv" firstAttribute="width" secondItem="6ll-Ao-g51" secondAttribute="width" id="eBb-IQ-WNV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20392156859999999" green="0.63529411759999999" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Df7-Xw-ano" firstAttribute="centerY" secondItem="3C3-V8-qvR" secondAttribute="centerY" id="B8o-mh-Bgn"/>
+                            <constraint firstItem="Df7-Xw-ano" firstAttribute="width" secondItem="0v1-ir-Dhj" secondAttribute="width" multiplier="0.8" id="e4l-Xc-pWM"/>
+                            <constraint firstItem="Df7-Xw-ano" firstAttribute="centerX" secondItem="3C3-V8-qvR" secondAttribute="centerX" id="rok-d4-Kuq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3C3-V8-qvR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vFf-nt-hig"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tqo-aX-q7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029" y="138"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="facebook" width="836" height="286"/>
+        <image name="twitter" width="842" height="290"/>
+    </resources>
 </document>
