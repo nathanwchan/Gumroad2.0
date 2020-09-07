@@ -19,7 +19,7 @@
 		C1718BD2250469B5003A1AF3 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BD1250469B5003A1AF3 /* StringExtensions.swift */; };
 		C1718BD42506DE83003A1AF3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BD32506DE83003A1AF3 /* LoginViewController.swift */; };
 		C1718BD62506DEF9003A1AF3 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BD52506DEF9003A1AF3 /* Utilities.swift */; };
-		C1718BD82506E046003A1AF3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BD72506E046003A1AF3 /* MainViewController.swift */; };
+		C1718BD82506E046003A1AF3 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BD72506E046003A1AF3 /* LibraryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +37,7 @@
 		C1718BD1250469B5003A1AF3 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		C1718BD32506DE83003A1AF3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C1718BD52506DEF9003A1AF3 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		C1718BD72506E046003A1AF3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C1718BD72506E046003A1AF3 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,7 @@
 			children = (
 				C1718BCC2504684B003A1AF3 /* Main.storyboard */,
 				C1718BB525045750003A1AF3 /* LaunchViewController.swift */,
-				C1718BD72506E046003A1AF3 /* MainViewController.swift */,
+				C1718BD72506E046003A1AF3 /* LibraryViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 				C1718BB625045750003A1AF3 /* LaunchViewController.swift in Sources */,
 				C1718BB225045750003A1AF3 /* AppDelegate.swift in Sources */,
 				C1718BB425045750003A1AF3 /* SceneDelegate.swift in Sources */,
-				C1718BD82506E046003A1AF3 /* MainViewController.swift in Sources */,
+				C1718BD82506E046003A1AF3 /* LibraryViewController.swift in Sources */,
 				C1718BD62506DEF9003A1AF3 /* Utilities.swift in Sources */,
 				C1718BCF2504697F003A1AF3 /* StoryboardIdentifiable.swift in Sources */,
 			);

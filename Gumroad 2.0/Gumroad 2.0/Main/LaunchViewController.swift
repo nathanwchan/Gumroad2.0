@@ -14,7 +14,11 @@ class LaunchViewController: UIViewController {
 
         let vc: UIViewController
         if UserDefaults.standard.bool(forKey: Globals.AuthTokenUserDefaultsKey) {
-            vc = MainViewController.instantiate()
+            let tabVC = UITabBarController()
+            let firstVC = LibraryViewController.instantiate()
+            firstVC.tabBarItem = UITabBarItem(title: "Library", image: UIImage(systemName: "book.fill"), tag: 0)
+            tabVC.viewControllers = [firstVC]
+            vc = tabVC
         } else {
             vc = AuthenticationViewController.instantiate()
         }

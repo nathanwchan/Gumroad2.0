@@ -22,35 +22,71 @@
             </objects>
             <point key="canvasLocation" x="151" y="89"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Library-->
         <scene sceneID="alc-yB-IWN">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AK8-71-Ibn" customClass="MainViewController" customModule="Gumroad_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LibraryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="AK8-71-Ibn" customClass="LibraryViewController" customModule="Gumroad_2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OOK-89-0pB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DrB-au-QqP">
+                                <rect key="frame" x="2" y="74" width="402" height="56"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="Zxn-fK-O1o">
+                                        <rect key="frame" x="0.0" y="0.0" width="367" height="56"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gCL-6B-JkA">
+                                        <rect key="frame" x="372" y="0.0" width="30" height="56"/>
+                                        <state key="normal" image="filter"/>
+                                        <connections>
+                                            <action selector="filterClicked:" destination="AK8-71-Ibn" eventType="touchUpInside" id="0Yg-m5-36K"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CYo-9f-rD5">
+                                <rect key="frame" x="0.0" y="130" width="414" height="732"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SE3-2T-fCz">
                                 <rect key="frame" x="351" y="44" width="48" height="30"/>
                                 <state key="normal" title="Logout">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.20392156859999999" green="0.63529411759999999" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="logoutClicked:" destination="AK8-71-Ibn" eventType="touchUpInside" id="TlD-0b-dh7"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.20392156859999999" green="0.63529411759999999" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="DrB-au-QqP" firstAttribute="top" secondItem="SE3-2T-fCz" secondAttribute="bottom" id="A5b-Ar-5Yn"/>
                             <constraint firstItem="Mkq-Vh-2gq" firstAttribute="trailing" secondItem="SE3-2T-fCz" secondAttribute="trailing" constant="15" id="Tkl-4A-pTj"/>
+                            <constraint firstItem="CYo-9f-rD5" firstAttribute="top" secondItem="DrB-au-QqP" secondAttribute="bottom" id="Ux6-K6-dl6"/>
+                            <constraint firstItem="Mkq-Vh-2gq" firstAttribute="bottom" secondItem="CYo-9f-rD5" secondAttribute="bottom" id="Xvd-Fo-FFJ"/>
                             <constraint firstItem="SE3-2T-fCz" firstAttribute="top" secondItem="Mkq-Vh-2gq" secondAttribute="top" id="Z6W-Z1-RzL"/>
+                            <constraint firstItem="Mkq-Vh-2gq" firstAttribute="trailing" secondItem="DrB-au-QqP" secondAttribute="trailing" constant="10" id="feP-LL-g1Q"/>
+                            <constraint firstItem="CYo-9f-rD5" firstAttribute="centerX" secondItem="Mkq-Vh-2gq" secondAttribute="centerX" id="gj0-K0-T2q"/>
+                            <constraint firstItem="CYo-9f-rD5" firstAttribute="width" secondItem="OOK-89-0pB" secondAttribute="width" id="tFX-m8-Kju"/>
+                            <constraint firstItem="DrB-au-QqP" firstAttribute="leading" secondItem="Mkq-Vh-2gq" secondAttribute="leading" constant="2" id="uaT-Sy-dJN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Mkq-Vh-2gq"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Library" selectedImage="book.fill" catalog="system" id="kwc-B1-CN7"/>
+                    <connections>
+                        <outlet property="searchBar" destination="Zxn-fK-O1o" id="ALH-tt-wSA"/>
+                        <outlet property="tableView" destination="CYo-9f-rD5" id="DvN-uS-Blx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SLk-8b-GdB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1093" y="88"/>
+            <point key="canvasLocation" x="2002.8985507246377" y="87.723214285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="book.fill" catalog="system" width="128" height="100"/>
+        <image name="filter" width="30" height="30"/>
+    </resources>
 </document>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, StoryboardIdentifiable {
+class LibraryViewController: UIViewController, StoryboardIdentifiable {
     static var storyboardName: StoryboardName = .main
 
     @IBAction func logoutClicked(_ sender: Any) {
