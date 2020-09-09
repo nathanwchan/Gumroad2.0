@@ -13,6 +13,12 @@ class LibraryViewController: UIViewController, StoryboardIdentifiable {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
 
+    var products: [Product] = [] {
+        didSet {
+            self.tableView.reloadData()
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,6 +35,10 @@ class LibraryViewController: UIViewController, StoryboardIdentifiable {
         self.searchBar.delegate = self
 
         self.tableView.keyboardDismissMode = .onDrag
+
+        NetworkManager.shared.getOwnedProducts() { products in
+            self.products = products
+        }
     }
 
     @IBAction func filterClicked(_ sender: Any) {
@@ -42,11 +52,15 @@ class LibraryViewController: UIViewController, StoryboardIdentifiable {
 
 extension LibraryViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let productCell = tableView.dequeueReusableCell(withIdentifier: "ProductTableViewCell", for: indexPath) as? ProductTableViewCell else {
+            fatalError("The dequeued cell is not an instance of ProductTableViewCell.")
+        }
+        productCell.configure(with: products[indexPath.row])
+        return productCell
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return products.count
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

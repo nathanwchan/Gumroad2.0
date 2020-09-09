@@ -12,8 +12,8 @@ class NetworkManager {
 
     /* BEGIN - FOR MOCK PURPOSES ONLY */
 
-    var allProducts: [Product]
-    var allContent: [Content]
+    private var allProducts: [Product]
+    private var allContent: [Content]
 
     private init() {
         allProducts = []
@@ -46,7 +46,7 @@ class NetworkManager {
 
     /* END - FOR MOCK PURPOSES ONLY */
 
-    func getOwnedProducts(id: String, completion: @escaping ([Product]) -> Void) {
+    func getOwnedProducts(completion: @escaping ([Product]) -> Void) {
         // replace with API call
         completion(allProducts)
     }
