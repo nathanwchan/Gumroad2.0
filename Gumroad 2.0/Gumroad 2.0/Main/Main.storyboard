@@ -65,7 +65,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="373" height="533"/>
                                                             <subviews>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fei-M5-Qal">
-                                                                    <rect key="frame" x="0.5" y="0.0" width="372.5" height="372.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="373" height="372.5"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" secondItem="fei-M5-Qal" secondAttribute="height" id="VOW-Fh-4Aw"/>
                                                                     </constraints>
@@ -94,6 +94,7 @@ Label</string>
                                                                 </view>
                                                             </subviews>
                                                             <constraints>
+                                                                <constraint firstItem="fei-M5-Qal" firstAttribute="width" secondItem="xsy-FX-2nx" secondAttribute="width" id="1gL-bD-87Q"/>
                                                                 <constraint firstItem="hNt-5g-irb" firstAttribute="width" secondItem="zv5-J8-sKr" secondAttribute="width" id="Ec5-UN-cAd"/>
                                                                 <constraint firstItem="zv5-J8-sKr" firstAttribute="centerX" secondItem="xsy-FX-2nx" secondAttribute="centerX" id="LDT-63-MiG"/>
                                                                 <constraint firstItem="lmG-Yo-SfQ" firstAttribute="width" secondItem="xsy-FX-2nx" secondAttribute="width" multiplier="0.643432" id="LQC-y1-h8B"/>

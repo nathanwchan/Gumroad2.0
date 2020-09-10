@@ -11,6 +11,6 @@ struct Product {
     var id: String
     var name: String
     var creatorName: String
-    var image: URL?
+    var imageUrlString: String
     var archived: Bool
 }

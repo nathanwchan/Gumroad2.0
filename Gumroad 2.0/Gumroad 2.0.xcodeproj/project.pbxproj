@@ -24,6 +24,8 @@
 		C1718BDF25083E5D003A1AF3 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BDE25083E5D003A1AF3 /* Content.swift */; };
 		C1718BE125083F9D003A1AF3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BE025083F9D003A1AF3 /* NetworkManager.swift */; };
 		C1718BE325085254003A1AF3 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BE225085254003A1AF3 /* ProductTableViewCell.swift */; };
+		C1718BE5250AE6F7003A1AF3 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BE4250AE6F7003A1AF3 /* UIImageViewExtensions.swift */; };
+		C1718BE8250AEC47003A1AF3 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BE7250AEC47003A1AF3 /* Cache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		C1718BDE25083E5D003A1AF3 /* Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
 		C1718BE025083F9D003A1AF3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		C1718BE225085254003A1AF3 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		C1718BE4250AE6F7003A1AF3 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
+		C1718BE7250AEC47003A1AF3 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +122,9 @@
 				C1718BD52506DEF9003A1AF3 /* Utilities.swift */,
 				C1718BCE2504697F003A1AF3 /* StoryboardIdentifiable.swift */,
 				C1718BD1250469B5003A1AF3 /* StringExtensions.swift */,
+				C1718BE4250AE6F7003A1AF3 /* UIImageViewExtensions.swift */,
 				C1718BE025083F9D003A1AF3 /* NetworkManager.swift */,
+				C1718BE7250AEC47003A1AF3 /* Cache.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -203,6 +209,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1718BE5250AE6F7003A1AF3 /* UIImageViewExtensions.swift in Sources */,
+				C1718BE8250AEC47003A1AF3 /* Cache.swift in Sources */,
 				C1718BE125083F9D003A1AF3 /* NetworkManager.swift in Sources */,
 				C1718BD42506DE83003A1AF3 /* LoginViewController.swift in Sources */,
 				C1718BD2250469B5003A1AF3 /* StringExtensions.swift in Sources */,

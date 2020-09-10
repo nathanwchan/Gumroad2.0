@@ -18,6 +18,7 @@ class LibraryViewController: UIViewController, StoryboardIdentifiable {
             self.tableView.reloadData()
         }
     }
+    var allProducts: [Product] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +39,7 @@ class LibraryViewController: UIViewController, StoryboardIdentifiable {
 
         NetworkManager.shared.getOwnedProducts() { products in
             self.products = products
+            self.allProducts = products
         }
     }
 
@@ -74,6 +76,20 @@ extension LibraryViewController: UITableViewDataSource, UITableViewDelegate {
 
 extension LibraryViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            products = allProducts
+            scrollToFirstRow()
+        } else {
+            products = allProducts.filter {
+                $0.name.lowercased().contains(searchText.lowercased()) || $0.creatorName.lowercased().contains(searchText.lowercased())
+            }
+        }
+    }
 
+    func scrollToFirstRow() {
+        if !products.isEmpty {
+            let indexPath = IndexPath(row: 0, section: 0)
+            tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+        }
     }
 }

@@ -14,8 +14,7 @@ class ProductTableViewCell: UITableViewCell {
     @IBOutlet weak var creatorLabel: UILabel!
 
     func configure(with product: Product) {
-        let data = try? Data(contentsOf: product.image!)
-        productImage.image = UIImage(data: data!)
+        productImage.image(fromUrl: product.imageUrlString)
 
         nameLabel.text = product.name
         creatorLabel.text = "By \(product.creatorName)"

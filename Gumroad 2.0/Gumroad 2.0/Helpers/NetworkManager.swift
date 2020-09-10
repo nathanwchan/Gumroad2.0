@@ -26,7 +26,7 @@ class NetworkManager {
                     id: id,
                     name: product.name,
                     creatorName: product.creatorName,
-                    image: URL(string: product.imageUrlString),
+                    imageUrlString: product.imageUrlString,
                     archived: false
                 )
             )
