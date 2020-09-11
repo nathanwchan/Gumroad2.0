@@ -7,17 +7,18 @@
 
 import UIKit
 
-class LibraryViewController: UIViewController, StoryboardIdentifiable {
+class LibraryViewController: UIViewController, StoryboardIdentifiable, ProductTableViewCellDelegate {
     static var storyboardName: StoryboardName = .main
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
 
-    var products: [Product] = [] {
+    var productsToShow: [Product] = [] {
         didSet {
             self.tableView.reloadData()
         }
     }
+    var filteredProducts: [Product] = []
     var allProducts: [Product] = []
 
     override func viewDidLoad() {
@@ -38,9 +39,54 @@ class LibraryViewController: UIViewController, StoryboardIdentifiable {
         self.tableView.keyboardDismissMode = .onDrag
 
         NetworkManager.shared.getOwnedProducts() { products in
-            self.products = products
             self.allProducts = products
+            self.applyFilters()
         }
+    }
+
+    func applyFilters(with searchText: String? = nil) {
+        filteredProducts = allProducts.filter { !$0.archived } // for now
+
+        if let searchText = searchText {
+            productsToShow = filteredProducts.filter {
+                $0.name.lowercased().contains(searchText.lowercased()) || $0.creatorName.lowercased().contains(searchText.lowercased())
+            }
+        } else {
+            productsToShow = filteredProducts
+        }
+    }
+
+    func showOptions(product: Product) {
+        let actionMenu = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+
+        if !product.archived {
+            let favoriteAction = UIAlertAction(title: "Add to Favorites", style: .default) { _ in
+                // TODO
+            }
+            actionMenu.addAction(favoriteAction)
+        }
+
+        let title = product.archived ? "Unarchive from Library" : "Archive from Library"
+        let style: UIAlertAction.Style = product.archived ? .default : .destructive
+        let archiveAction = UIAlertAction(title: title, style: style) { _ in
+            NetworkManager.shared.toggleArchive(for: product.id) { product in
+                if let product = product {
+                    for i in 0 ..< self.allProducts.count {
+                        if self.allProducts[i].id == product.id {
+                            self.allProducts[i].archived = product.archived
+                            self.applyFilters()
+                            break
+                        }
+                    }
+                }
+            }
+        }
+        actionMenu.addAction(archiveAction)
+
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        actionMenu.addAction(cancelAction)
+
+        present(actionMenu, animated: true, completion: nil)
     }
 
     @IBAction func filterClicked(_ sender: Any) {
@@ -57,12 +103,13 @@ extension LibraryViewController: UITableViewDataSource, UITableViewDelegate {
         guard let productCell = tableView.dequeueReusableCell(withIdentifier: "ProductTableViewCell", for: indexPath) as? ProductTableViewCell else {
             fatalError("The dequeued cell is not an instance of ProductTableViewCell.")
         }
-        productCell.configure(with: products[indexPath.row])
+        productCell.delegate = self
+        productCell.configure(with: productsToShow[indexPath.row])
         return productCell
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return products.count
+        return productsToShow.count
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -77,17 +124,15 @@ extension LibraryViewController: UITableViewDataSource, UITableViewDelegate {
 extension LibraryViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
-            products = allProducts
+            productsToShow = allProducts
             scrollToFirstRow()
         } else {
-            products = allProducts.filter {
-                $0.name.lowercased().contains(searchText.lowercased()) || $0.creatorName.lowercased().contains(searchText.lowercased())
-            }
+            applyFilters(with: searchText)
         }
     }
 
     func scrollToFirstRow() {
-        if !products.isEmpty {
+        if !productsToShow.isEmpty {
             let indexPath = IndexPath(row: 0, section: 0)
             tableView.scrollToRow(at: indexPath, at: .top, animated: true)
         }

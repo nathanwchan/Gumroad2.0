@@ -104,10 +104,20 @@ Label</string>
                                                                 <constraint firstAttribute="trailing" secondItem="zv5-J8-sKr" secondAttribute="trailing" constant="20" id="n4b-Sx-KSO"/>
                                                             </constraints>
                                                         </stackView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2h-pk-fWY">
+                                                            <rect key="frame" x="346" y="5" width="19" height="22"/>
+                                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <state key="normal" image="ellipsis" catalog="system"/>
+                                                            <connections>
+                                                                <action selector="ellipsisClicked:" destination="xi2-vB-sB0" eventType="touchUpInside" id="w5x-Lu-aR5"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="trailing" secondItem="xsy-FX-2nx" secondAttribute="trailing" id="3DI-6A-Bbn"/>
+                                                        <constraint firstAttribute="trailing" secondItem="k2h-pk-fWY" secondAttribute="trailing" constant="8" id="Nug-BE-lTd"/>
+                                                        <constraint firstItem="k2h-pk-fWY" firstAttribute="top" secondItem="8Ff-B2-hYe" secondAttribute="top" constant="5" id="j81-Ac-zIv"/>
                                                         <constraint firstAttribute="bottom" secondItem="xsy-FX-2nx" secondAttribute="bottom" id="jGV-d7-B79"/>
                                                         <constraint firstItem="xsy-FX-2nx" firstAttribute="top" secondItem="8Ff-B2-hYe" secondAttribute="top" id="mpE-2e-5st"/>
                                                         <constraint firstItem="xsy-FX-2nx" firstAttribute="leading" secondItem="8Ff-B2-hYe" secondAttribute="leading" id="o5I-Wt-2Z0"/>
@@ -168,6 +178,7 @@ Label</string>
     </scenes>
     <resources>
         <image name="book.fill" catalog="system" width="128" height="100"/>
+        <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="filter" width="30" height="30"/>
     </resources>
 </document>

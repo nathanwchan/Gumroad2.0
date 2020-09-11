@@ -13,10 +13,25 @@ class ProductTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var creatorLabel: UILabel!
 
+    var product: Product?
+    var delegate: ProductTableViewCellDelegate?
+
     func configure(with product: Product) {
+        self.product = product
+
         productImage.image(fromUrl: product.imageUrlString)
 
         nameLabel.text = product.name
         creatorLabel.text = "By \(product.creatorName)"
     }
+
+    @IBAction func ellipsisClicked(_ sender: Any) {
+        guard let product = product else { return }
+        delegate?.showOptions(product: product)
+    }
 }
+
+protocol ProductTableViewCellDelegate {
+    func showOptions(product: Product)
+}
+

@@ -55,4 +55,16 @@ class NetworkManager {
         // replace with API call
         completion(allContent)
     }
+
+    func toggleArchive(for productId: String, completion: @escaping (Product?) -> Void) {
+        // replace with API call
+        for i in 0 ..< allProducts.count {
+            if allProducts[i].id == productId {
+                allProducts[i].archived.toggle()
+                completion(allProducts[i])
+                return
+            }
+        }
+        completion(nil)
+    }
 }
