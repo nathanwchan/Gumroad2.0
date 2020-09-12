@@ -26,6 +26,7 @@
 		C1718BE325085254003A1AF3 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BE225085254003A1AF3 /* ProductTableViewCell.swift */; };
 		C1718BE5250AE6F7003A1AF3 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BE4250AE6F7003A1AF3 /* UIImageViewExtensions.swift */; };
 		C1718BE8250AEC47003A1AF3 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BE7250AEC47003A1AF3 /* Cache.swift */; };
+		C1718BEC250D3A95003A1AF3 /* CreatorFilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BEB250D3A95003A1AF3 /* CreatorFilterButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		C1718BE225085254003A1AF3 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		C1718BE4250AE6F7003A1AF3 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		C1718BE7250AEC47003A1AF3 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		C1718BEB250D3A95003A1AF3 /* CreatorFilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorFilterButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				C1718BE4250AE6F7003A1AF3 /* UIImageViewExtensions.swift */,
 				C1718BE025083F9D003A1AF3 /* NetworkManager.swift */,
 				C1718BE7250AEC47003A1AF3 /* Cache.swift */,
+				C1718BEB250D3A95003A1AF3 /* CreatorFilterButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				C1718BD42506DE83003A1AF3 /* LoginViewController.swift in Sources */,
 				C1718BD2250469B5003A1AF3 /* StringExtensions.swift in Sources */,
 				C1718BCB25046826003A1AF3 /* AuthenticationViewController.swift in Sources */,
+				C1718BEC250D3A95003A1AF3 /* CreatorFilterButton.swift in Sources */,
 				C1718BDF25083E5D003A1AF3 /* Content.swift in Sources */,
 				C1718BB625045750003A1AF3 /* LaunchViewController.swift in Sources */,
 				C1718BB225045750003A1AF3 /* AppDelegate.swift in Sources */,

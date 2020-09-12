@@ -19,6 +19,7 @@ class ProductTableViewCell: UITableViewCell {
     func configure(with product: Product) {
         self.product = product
 
+        productImage.image = nil
         productImage.image(fromUrl: product.imageUrlString)
 
         nameLabel.text = product.name
