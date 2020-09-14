@@ -23,7 +23,7 @@ class ProductContentView: UIView {
         self.content = content
 
         contentLabel.text = content.name
-        sizeLabel.text = "\(content.sizeKb) KB"
+        sizeLabel.text = content.sizeKb < 1024 ? "\(content.sizeKb) KB" : "\(String(format: "%.1f", Float(content.sizeKb) / 1024)) MB"
     }
 
 }
