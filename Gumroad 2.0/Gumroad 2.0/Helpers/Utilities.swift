@@ -122,12 +122,12 @@ enum MockData {
                 ContentMockData(
                     name: "Tutorials",
                     sizeKb: 1832,
-                    urlString: "lkjsdf.pdf"
+                    urlString: "https://github.com/nathanwchan/Gumroad2.0/raw/master/Mock%20Content/swift_tutorial.pdf"
                 ),
                 ContentMockData(
                     name: "Sample code",
                     sizeKb: 159832,
-                    urlString: "lkjsdf.zip"
+                    urlString: "https://github.com/nathanwchan/Gumroad2.0/raw/master/Mock%20Content/swift_tutorial.zip"
                 )
             ]
         ),
@@ -139,12 +139,12 @@ enum MockData {
                 ContentMockData(
                     name: "Tutorials",
                     sizeKb: 2632,
-                    urlString: "lkjsdf.pdf"
+                    urlString: "https://github.com/nathanwchan/Gumroad2.0/raw/master/Mock%20Content/swift_tutorial.pdf"
                 ),
                 ContentMockData(
-                    name: "Sample code (ZIP)",
+                    name: "Sample code",
                     sizeKb: 109832,
-                    urlString: "lkjsdf.zip"
+                    urlString: "https://github.com/nathanwchan/Gumroad2.0/raw/master/Mock%20Content/swift_tutorial.zip"
                 )
             ]
         ),
@@ -156,12 +156,12 @@ enum MockData {
                 ContentMockData(
                     name: "Tutorials",
                     sizeKb: 3232,
-                    urlString: "lkjsdf.pdf"
+                    urlString: "https://github.com/nathanwchan/Gumroad2.0/raw/master/Mock%20Content/swift_tutorial.pdf"
                 ),
                 ContentMockData(
-                    name: "Sample code (ZIP)",
+                    name: "Sample code",
                     sizeKb: 79832,
-                    urlString: "lkjsdf.zip"
+                    urlString: "https://github.com/nathanwchan/Gumroad2.0/raw/master/Mock%20Content/swift_tutorial.zip"
                 )
             ]
         ),

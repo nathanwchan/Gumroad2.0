@@ -57,9 +57,14 @@ class ProductContentViewController: UIViewController, StoryboardIdentifiable {
         guard let view = sender.view as? ProductContentView else { return }
         guard let content = view.content else { return }
 
-        let vc = MediaPlayerViewController()
-        vc.content = content
-        navigationController?.pushViewController(vc, animated: true)
+        if content.isViewable() {
+            let vc = MediaPlayerViewController()
+            vc.content = content
+            navigationController?.pushViewController(vc, animated: true)
+        } else if let url = content.url {
+            let activityViewController = UIActivityViewController(activityItems: [url], applicationActivities: nil)
+            present(activityViewController, animated: true, completion: nil)
+        }
     }
 
     @IBAction func backClicked(_ sender: Any) {
