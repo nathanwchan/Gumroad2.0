@@ -19,14 +19,14 @@ enum MockData {
             imageUrlString: "https://static-2.gumroad.com/res/gumroad/5943448006997/asset_previews/52d22e2b611288ea3d787003fbcceaf9/retina/Cover-Gumroad.png",
             content: [
                 ContentMockData(
-                    name: "The Good Parts of AWS (PDF)",
+                    name: "The Good Parts of AWS",
                     sizeKb: 345,
-                    urlString: ""
+                    urlString: "lkjsdf.pdf"
                 ),
                 ContentMockData(
-                    name: "The Good Parts of AWS (EPUB)",
+                    name: "The Good Parts of AWS",
                     sizeKb: 281,
-                    urlString: ""
+                    urlString: "lkjsdf.epub"
                 )
             ]
         ),
@@ -38,37 +38,37 @@ enum MockData {
                 ContentMockData(
                     name: "Intro",
                     sizeKb: 1200,
-                    urlString: ""
+                    urlString: "lkjsdf.mp4"
                 ),
                 ContentMockData(
                     name: "Credibility",
                     sizeKb: 4200,
-                    urlString: ""
+                    urlString: "lkjsdf.mp4"
                 ),
                 ContentMockData(
                     name: "Measure of Success",
                     sizeKb: 3100,
-                    urlString: ""
+                    urlString: "lkjsdf.mp4"
                 ),
                 ContentMockData(
                     name: "Twitter Funnel",
                     sizeKb: 7200,
-                    urlString: ""
+                    urlString: "lkjsdf.mp4"
                 ),
                 ContentMockData(
                     name: "What Not to Tweet",
                     sizeKb: 4800,
-                    urlString: ""
+                    urlString: "lkjsdf.mp4"
                 ),
                 ContentMockData(
                     name: "What Not to Tweet Do",
                     sizeKb: 9000,
-                    urlString: ""
+                    urlString: "lkjsdf.mp4"
                 ),
                 ContentMockData(
                     name: "Recap: Starter Strategy",
                     sizeKb: 4200,
-                    urlString: ""
+                    urlString: "lkjsdf.mp4"
                 ),
             ]
         ),
@@ -78,9 +78,9 @@ enum MockData {
             imageUrlString: "https://philipkiely.com/assets/img/wfsd_paper_render.jpg",
             content: [
                 ContentMockData(
-                    name: "Writing for Software Developers (PDF)",
+                    name: "Writing for Software Developers",
                     sizeKb: 1345,
-                    urlString: ""
+                    urlString: "lkjsdf.pdf"
                 )
             ]
         ),
@@ -90,14 +90,14 @@ enum MockData {
             imageUrlString: "https://static-2.gumroad.com/res/gumroad/3015050709675/asset_previews/fbf4925553912ef3aba708c2a380056e/retina/POST_20_E2_80_94_20Cover.jpg",
             content: [
                 ContentMockData(
-                    name: "POST — A Short Story of No Consequence at All (PDF)",
+                    name: "POST — A Short Story of No Consequence at All",
                     sizeKb: 132,
-                    urlString: ""
+                    urlString: "lkjsdf.pdf"
                 ),
                 ContentMockData(
-                    name: "POST — A Short Story of No Consequence at All (AUDIOBOOK)",
+                    name: "POST — A Short Story of No Consequence at All",
                     sizeKb: 59832,
-                    urlString: ""
+                    urlString: "lkjsdf.mp3"
                 )
             ]
         ),
@@ -107,9 +107,9 @@ enum MockData {
             imageUrlString: "https://static-2.gumroad.com/res/gumroad/3015050709675/asset_previews/dd472bffe57a0a49860bc926f01dd76f/retina/Screen_20Shot_202020-07-18_20at_2011.52.37_20AM.png",
             content: [
                 ContentMockData(
-                    name: "CONFERENCE ROOM, FIVE MINUTES — Ten Illustrated Essays About The Office (PDF)",
+                    name: "CONFERENCE ROOM, FIVE MINUTES — Ten Illustrated Essays About The Office",
                     sizeKb: 245,
-                    urlString: ""
+                    urlString: "lkjsdf.pdf"
                 )
             ]
         ),
@@ -121,12 +121,12 @@ enum MockData {
                 ContentMockData(
                     name: "Tutorials",
                     sizeKb: 1832,
-                    urlString: ""
+                    urlString: "lkjsdf.pdf"
                 ),
                 ContentMockData(
-                    name: "Sample code (ZIP)",
+                    name: "Sample code",
                     sizeKb: 159832,
-                    urlString: ""
+                    urlString: "lkjsdf.zip"
                 )
             ]
         ),
@@ -138,12 +138,12 @@ enum MockData {
                 ContentMockData(
                     name: "Tutorials",
                     sizeKb: 2632,
-                    urlString: ""
+                    urlString: "lkjsdf.pdf"
                 ),
                 ContentMockData(
                     name: "Sample code (ZIP)",
                     sizeKb: 109832,
-                    urlString: ""
+                    urlString: "lkjsdf.zip"
                 )
             ]
         ),
@@ -155,12 +155,12 @@ enum MockData {
                 ContentMockData(
                     name: "Tutorials",
                     sizeKb: 3232,
-                    urlString: ""
+                    urlString: "lkjsdf.pdf"
                 ),
                 ContentMockData(
                     name: "Sample code (ZIP)",
                     sizeKb: 79832,
-                    urlString: ""
+                    urlString: "lkjsdf.zip"
                 )
             ]
         ),

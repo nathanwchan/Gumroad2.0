@@ -10,6 +10,7 @@ import UIKit
 
 class ProductContentView: UIView {
 
+    @IBOutlet weak var formatImage: UIImageView!
     @IBOutlet weak var contentLabel: UILabel!
     @IBOutlet weak var sizeLabel: UILabel!
 
@@ -22,6 +23,9 @@ class ProductContentView: UIView {
     func configure(with content: Content) {
         self.content = content
 
+
+        let image = UIImage(named: "\(content.url?.absoluteString.components(separatedBy: ".").last?.lowercased() ?? "file").png")
+        formatImage.image = image
         contentLabel.text = content.name
         sizeLabel.text = content.sizeKb < 1024 ? "\(content.sizeKb) KB" : "\(String(format: "%.1f", Float(content.sizeKb) / 1024)) MB"
     }
