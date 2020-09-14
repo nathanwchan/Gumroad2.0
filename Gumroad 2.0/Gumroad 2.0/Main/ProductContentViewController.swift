@@ -13,7 +13,6 @@ class ProductContentViewController: UIViewController, StoryboardIdentifiable {
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var productLabel: UILabel!
     @IBOutlet weak var productCreatorLabel: UILabel!
-    @IBOutlet weak var productContentStackView: UIStackView!
     @IBOutlet weak var contentStackView: UIStackView!
 
     var product: Product?
