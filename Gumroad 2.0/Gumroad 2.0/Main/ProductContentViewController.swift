@@ -21,6 +21,11 @@ class ProductContentViewController: UIViewController, StoryboardIdentifiable {
             for item in content {
                 let productContentView = ProductContentView.instanceFromNib() as! ProductContentView
                 productContentView.configure(with: item)
+
+                let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+                productContentView.addGestureRecognizer(tap)
+                productContentView.isUserInteractionEnabled = true
+
                 self.contentStackView.addArrangedSubview(productContentView)
                 productContentView.heightAnchor.constraint(equalToConstant: 80).isActive = true
                 productContentView.widthAnchor.constraint(equalTo: contentStackView.widthAnchor).isActive = true
@@ -40,6 +45,21 @@ class ProductContentViewController: UIViewController, StoryboardIdentifiable {
         NetworkManager.shared.getContent(for: product.id) { content in
             self.content = content
         }
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+
+    @objc func handleTap(_ sender: UITapGestureRecognizer) {
+        guard let view = sender.view as? ProductContentView else { return }
+        guard let content = view.content else { return }
+
+        let vc = MediaPlayerViewController()
+        vc.content = content
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     @IBAction func backClicked(_ sender: Any) {

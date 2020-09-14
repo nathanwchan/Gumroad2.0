@@ -30,6 +30,7 @@
 		C1718BEE250ED42C003A1AF3 /* ProductContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BED250ED42C003A1AF3 /* ProductContentViewController.swift */; };
 		C1718BF0250EDF46003A1AF3 /* ProductContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1718BEF250EDF46003A1AF3 /* ProductContentView.xib */; };
 		C1718BF2250EE100003A1AF3 /* ProductContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BF1250EE100003A1AF3 /* ProductContentView.swift */; };
+		C1718BF42510115D003A1AF3 /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BF32510115D003A1AF3 /* MediaPlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		C1718BED250ED42C003A1AF3 /* ProductContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductContentViewController.swift; sourceTree = "<group>"; };
 		C1718BEF250EDF46003A1AF3 /* ProductContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductContentView.xib; sourceTree = "<group>"; };
 		C1718BF1250EE100003A1AF3 /* ProductContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductContentView.swift; sourceTree = "<group>"; };
+		C1718BF32510115D003A1AF3 /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				C1718BED250ED42C003A1AF3 /* ProductContentViewController.swift */,
 				C1718BEF250EDF46003A1AF3 /* ProductContentView.xib */,
 				C1718BF1250EE100003A1AF3 /* ProductContentView.swift */,
+				C1718BF32510115D003A1AF3 /* MediaPlayerViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				C1718BEE250ED42C003A1AF3 /* ProductContentViewController.swift in Sources */,
 				C1718BD2250469B5003A1AF3 /* StringExtensions.swift in Sources */,
 				C1718BCB25046826003A1AF3 /* AuthenticationViewController.swift in Sources */,
+				C1718BF42510115D003A1AF3 /* MediaPlayerViewController.swift in Sources */,
 				C1718BEC250D3A95003A1AF3 /* CreatorFilterButton.swift in Sources */,
 				C1718BDF25083E5D003A1AF3 /* Content.swift in Sources */,
 				C1718BB625045750003A1AF3 /* LaunchViewController.swift in Sources */,

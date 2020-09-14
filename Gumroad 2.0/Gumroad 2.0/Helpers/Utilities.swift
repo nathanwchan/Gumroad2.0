@@ -9,6 +9,7 @@ import Foundation
 
 enum Globals {
     static let AuthTokenUserDefaultsKey: String = "authToken"
+    static let LastLocationUserDefaultsKey: String = "lastLocation"
 }
 
 enum MockData {
@@ -21,7 +22,7 @@ enum MockData {
                 ContentMockData(
                     name: "The Good Parts of AWS",
                     sizeKb: 345,
-                    urlString: "lkjsdf.pdf"
+                    urlString: "https://github.com/nathanwchan/Gumroad2.0/raw/master/Mock%20Content/The%20Daily%20Stoic_%20366%20Meditations%20on%20Wisdom%2C%20Perseverance%2C%20and%20the%20Art%20of%20Living%20(%20PDFDrive.com%20).pdf"
                 ),
                 ContentMockData(
                     name: "The Good Parts of AWS",
@@ -80,7 +81,7 @@ enum MockData {
                 ContentMockData(
                     name: "Writing for Software Developers",
                     sizeKb: 1345,
-                    urlString: "lkjsdf.pdf"
+                    urlString: "https://github.com/nathanwchan/Gumroad2.0/raw/master/Mock%20Content/Dale_Carnegie_How_To_Stop_Worrying_And_Start_Living.pdf"
                 )
             ]
         ),

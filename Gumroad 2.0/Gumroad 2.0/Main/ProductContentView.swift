@@ -23,7 +23,6 @@ class ProductContentView: UIView {
     func configure(with content: Content) {
         self.content = content
 
-
         let image = UIImage(named: "\(content.url?.absoluteString.components(separatedBy: ".").last?.lowercased() ?? "file").png")
         formatImage.image = image
         contentLabel.text = content.name
