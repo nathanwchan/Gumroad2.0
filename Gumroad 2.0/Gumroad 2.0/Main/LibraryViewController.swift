@@ -215,6 +215,10 @@ extension LibraryViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         filterStackView.isHidden = true
         tableView.deselectRow(at: indexPath, animated: true)
+
+        let vc = ProductContentViewController.instantiate()
+        vc.product = productsToShow[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
     }
 
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {

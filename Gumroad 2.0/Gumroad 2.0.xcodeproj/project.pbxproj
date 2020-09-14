@@ -27,6 +27,9 @@
 		C1718BE5250AE6F7003A1AF3 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BE4250AE6F7003A1AF3 /* UIImageViewExtensions.swift */; };
 		C1718BE8250AEC47003A1AF3 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BE7250AEC47003A1AF3 /* Cache.swift */; };
 		C1718BEC250D3A95003A1AF3 /* CreatorFilterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BEB250D3A95003A1AF3 /* CreatorFilterButton.swift */; };
+		C1718BEE250ED42C003A1AF3 /* ProductContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BED250ED42C003A1AF3 /* ProductContentViewController.swift */; };
+		C1718BF0250EDF46003A1AF3 /* ProductContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1718BEF250EDF46003A1AF3 /* ProductContentView.xib */; };
+		C1718BF2250EE100003A1AF3 /* ProductContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1718BF1250EE100003A1AF3 /* ProductContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		C1718BE4250AE6F7003A1AF3 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		C1718BE7250AEC47003A1AF3 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		C1718BEB250D3A95003A1AF3 /* CreatorFilterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatorFilterButton.swift; sourceTree = "<group>"; };
+		C1718BED250ED42C003A1AF3 /* ProductContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductContentViewController.swift; sourceTree = "<group>"; };
+		C1718BEF250EDF46003A1AF3 /* ProductContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductContentView.xib; sourceTree = "<group>"; };
+		C1718BF1250EE100003A1AF3 /* ProductContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,9 @@
 				C1718BB525045750003A1AF3 /* LaunchViewController.swift */,
 				C1718BD72506E046003A1AF3 /* LibraryViewController.swift */,
 				C1718BE225085254003A1AF3 /* ProductTableViewCell.swift */,
+				C1718BED250ED42C003A1AF3 /* ProductContentViewController.swift */,
+				C1718BEF250EDF46003A1AF3 /* ProductContentView.xib */,
+				C1718BF1250EE100003A1AF3 /* ProductContentView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -199,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1718BBE25045754003A1AF3 /* LaunchScreen.storyboard in Resources */,
+				C1718BF0250EDF46003A1AF3 /* ProductContentView.xib in Resources */,
 				C1718BBB25045754003A1AF3 /* Assets.xcassets in Resources */,
 				C1718BB925045750003A1AF3 /* Authentication.storyboard in Resources */,
 				C1718BCD2504684B003A1AF3 /* Main.storyboard in Resources */,
@@ -216,6 +226,8 @@
 				C1718BE8250AEC47003A1AF3 /* Cache.swift in Sources */,
 				C1718BE125083F9D003A1AF3 /* NetworkManager.swift in Sources */,
 				C1718BD42506DE83003A1AF3 /* LoginViewController.swift in Sources */,
+				C1718BF2250EE100003A1AF3 /* ProductContentView.swift in Sources */,
+				C1718BEE250ED42C003A1AF3 /* ProductContentViewController.swift in Sources */,
 				C1718BD2250469B5003A1AF3 /* StringExtensions.swift in Sources */,
 				C1718BCB25046826003A1AF3 /* AuthenticationViewController.swift in Sources */,
 				C1718BEC250D3A95003A1AF3 /* CreatorFilterButton.swift in Sources */,

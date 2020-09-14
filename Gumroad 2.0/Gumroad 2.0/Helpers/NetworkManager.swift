@@ -53,7 +53,7 @@ class NetworkManager {
 
     func getContent(for productId: String, completion: @escaping ([Content]) -> Void) {
         // replace with API call
-        completion(allContent)
+        completion(allContent.filter { $0.productId == productId })
     }
 
     func toggleArchive(for productId: String, completion: @escaping (Product?) -> Void) {
