@@ -98,7 +98,7 @@ enum MockData {
                 ContentMockData(
                     name: "POST — A Short Story of No Consequence at All",
                     sizeKb: 59832,
-                    urlString: "lkjsdf.mp3"
+                    urlString: "https://github.com/nathanwchan/Gumroad2.0/raw/master/Mock%20Content/prince_00a_machiavelli.mp3"
                 )
             ]
         ),
