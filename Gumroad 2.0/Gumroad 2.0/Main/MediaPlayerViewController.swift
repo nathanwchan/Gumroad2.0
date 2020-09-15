@@ -22,19 +22,23 @@ class MediaPlayerViewController: UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: false)
         title = content.name
 
-        pdfView = PDFView(frame: view.safeAreaLayoutGuide.layoutFrame)
-        guard let pdfView = pdfView else { return }
-        guard let document = PDFDocument(url: url) else { return }
-        pdfView.document = document
-        pdfView.displayDirection = .vertical
-        pdfView.autoScales = true
-        pdfView.displayMode = .singlePageContinuous
-        let lastLocation = UserDefaults.standard.integer(forKey: "\(content.id)-\(Globals.LastLocationUserDefaultsKey)")
-        if let page = document.page(at: lastLocation) {
-            pdfView.go(to: PDFDestination(page: page, at: CGPoint(x: 0, y: view.safeAreaLayoutGuide.layoutFrame.size.height)))
+        switch content.format {
+        case .pdf:
+            pdfView = PDFView(frame: view.safeAreaLayoutGuide.layoutFrame)
+            guard let pdfView = pdfView else { return }
+            guard let document = PDFDocument(url: url) else { return }
+            pdfView.document = document
+            pdfView.displayDirection = .vertical
+            pdfView.autoScales = true
+            pdfView.displayMode = .singlePageContinuous
+            let lastLocation = UserDefaults.standard.integer(forKey: "\(content.id)-\(Globals.LastLocationUserDefaultsKey)")
+            if let page = document.page(at: lastLocation) {
+                pdfView.go(to: PDFDestination(page: page, at: CGPoint(x: 0, y: view.safeAreaLayoutGuide.layoutFrame.size.height)))
+            }
+            view.addSubview(pdfView)
+        default:
+            break
         }
-
-        view.addSubview(pdfView)
     }
 
     override func viewWillDisappear(_ animated: Bool) {

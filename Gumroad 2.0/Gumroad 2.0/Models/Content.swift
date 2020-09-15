@@ -14,7 +14,24 @@ struct Content {
     var sizeKb: Int
     var url: URL?
 
-    func isViewable() -> Bool {
-        return Set(["pdf", "mp3", "mp4"]).contains(url?.absoluteString.components(separatedBy: ".").last?.lowercased() ?? "unknown")
+    var format: ContentFormat {
+        if let formatString = url?.absoluteString.components(separatedBy: ".").last?.lowercased() {
+            return ContentFormat(rawValue: formatString) ?? .file
+        }
+        return .file
     }
+
+    func isViewable() -> Bool {
+        let validFormats: Set<ContentFormat> = [.pdf, .mp3, .mp4] // for now
+        return validFormats.contains(format)
+    }
+}
+
+enum ContentFormat: String {
+    case pdf
+    case mp3
+    case mp4
+    case epub
+    case zip
+    case file
 }
