@@ -38,7 +38,7 @@ class MediaPlayerViewController: UIViewController {
                 pdfView.go(to: PDFDestination(page: page, at: CGPoint(x: 0, y: view.safeAreaLayoutGuide.layoutFrame.size.height)))
             }
             view.addSubview(pdfView)
-        case .mp3:
+        case .mp3, .mp4:
             avPlayer = AVPlayer(url: url)
             if let lastLocation = getLastLocation() {
                 avPlayer?.seek(to: CMTimeMake(value: Int64(lastLocation), timescale: 1))
@@ -68,7 +68,7 @@ class MediaPlayerViewController: UIViewController {
                 let pageNumber = pdfView?.document?.index(for: currentPage) {
                 setLastLocation(pageNumber)
             }
-        case .mp3:
+        case .mp3, .mp4:
             if let currentTime = avPlayer?.currentTime() {
                 setLastLocation(Int(currentTime.value) / Int(currentTime.timescale))
             }

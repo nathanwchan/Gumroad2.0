@@ -39,37 +39,37 @@ enum MockData {
                 ContentMockData(
                     name: "Intro",
                     sizeKb: 1200,
-                    urlString: "lkjsdf.mp4"
+                    urlString: "https://github.com/nathanwchan/Gumroad2.0/raw/master/Mock%20Content/production%20ID_4482064.mp4"
                 ),
                 ContentMockData(
                     name: "Credibility",
                     sizeKb: 4200,
-                    urlString: "lkjsdf.mp4"
+                    urlString: "https://github.com/nathanwchan/Gumroad2.0/raw/master/Mock%20Content/video.mp4"
                 ),
                 ContentMockData(
                     name: "Measure of Success",
                     sizeKb: 3100,
-                    urlString: "lkjsdf.mp4"
+                    urlString: "https://github.com/nathanwchan/Gumroad2.0/raw/master/Mock%20Content/Fly_Through_Social_Networks_White.mp4"
                 ),
                 ContentMockData(
                     name: "Twitter Funnel",
                     sizeKb: 7200,
-                    urlString: "lkjsdf.mp4"
+                    urlString: "https://github.com/nathanwchan/Gumroad2.0/raw/master/Mock%20Content/production%20ID_4482064.mp4"
                 ),
                 ContentMockData(
                     name: "What Not to Tweet",
                     sizeKb: 4800,
-                    urlString: "lkjsdf.mp4"
+                    urlString: "https://github.com/nathanwchan/Gumroad2.0/raw/master/Mock%20Content/video.mp4"
                 ),
                 ContentMockData(
                     name: "What Not to Tweet Do",
                     sizeKb: 9000,
-                    urlString: "lkjsdf.mp4"
+                    urlString: "https://github.com/nathanwchan/Gumroad2.0/raw/master/Mock%20Content/Fly_Through_Social_Networks_White.mp4"
                 ),
                 ContentMockData(
                     name: "Recap: Starter Strategy",
                     sizeKb: 4200,
-                    urlString: "lkjsdf.mp4"
+                    urlString: "https://github.com/nathanwchan/Gumroad2.0/raw/master/Mock%20Content/production%20ID_4482064.mp4"
                 ),
             ]
         ),
