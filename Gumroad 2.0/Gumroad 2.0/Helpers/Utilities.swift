@@ -93,7 +93,7 @@ enum MockData {
                 ContentMockData(
                     name: "POST — A Short Story of No Consequence at All",
                     sizeKb: 132,
-                    urlString: "lkjsdf.pdf"
+                    urlString: "https://github.com/nathanwchan/Gumroad2.0/raw/master/Mock%20Content/the-prince.pdf"
                 ),
                 ContentMockData(
                     name: "POST — A Short Story of No Consequence at All",
@@ -110,7 +110,7 @@ enum MockData {
                 ContentMockData(
                     name: "CONFERENCE ROOM, FIVE MINUTES — Ten Illustrated Essays About The Office",
                     sizeKb: 245,
-                    urlString: "lkjsdf.pdf"
+                    urlString: "https://github.com/nathanwchan/Gumroad2.0/raw/master/Mock%20Content/the-prince.pdf"
                 )
             ]
         ),
