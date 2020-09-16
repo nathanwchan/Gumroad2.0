@@ -231,6 +231,7 @@ extension LibraryViewController: UISearchBarDelegate {
         filterStackView.isHidden = true
         self.searchText = searchText == "" ? nil : searchText
         applyFilters()
+        scrollToFirstRow()
     }
 
     func scrollToFirstRow() {
