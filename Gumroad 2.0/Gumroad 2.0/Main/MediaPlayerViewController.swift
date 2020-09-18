@@ -32,6 +32,8 @@ class MediaPlayerViewController: UIViewController {
             pdfView.document = document
             pdfView.displayDirection = .vertical
             pdfView.autoScales = true
+            pdfView.minScaleFactor = pdfView.scaleFactor
+            pdfView.maxScaleFactor = pdfView.scaleFactor
             pdfView.displayMode = .singlePageContinuous
             if let lastLocation = getLastLocation(),
                 let page = document.page(at: lastLocation) {
