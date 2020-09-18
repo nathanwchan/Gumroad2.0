@@ -193,8 +193,13 @@ class LibraryViewController: UIViewController, StoryboardIdentifiable, ProductTa
     }
 
     @IBAction func logoutClicked(_ sender: Any) {
-        UserDefaults.standard.set(false, forKey: Globals.AuthTokenUserDefaultsKey)
-        dismiss(animated: true, completion: nil)
+        let alert = UIAlertController(title: "Are you sure?", message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Logout", style: .destructive) { (action) in
+            UserDefaults.standard.set(false, forKey: Globals.AuthTokenUserDefaultsKey)
+            self.dismiss(animated: true, completion: nil)
+        })
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+        present(alert, animated: true)
     }
 }
 

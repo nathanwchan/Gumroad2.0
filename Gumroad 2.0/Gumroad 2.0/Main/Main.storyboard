@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Dp-fg-Wdb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Dp-fg-Wdb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -31,7 +31,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="DrB-au-QqP">
-                                <rect key="frame" x="2" y="74" width="402" height="56"/>
+                                <rect key="frame" x="2" y="62" width="402" height="56"/>
                                 <subviews>
                                     <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="Zxn-fK-O1o">
                                         <rect key="frame" x="0.0" y="0.0" width="367" height="56"/>
@@ -47,7 +47,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CYo-9f-rD5">
-                                <rect key="frame" x="0.0" y="130" width="414" height="732"/>
+                                <rect key="frame" x="0.0" y="118" width="414" height="744"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -142,7 +142,7 @@ Label</string>
                                 </prototypes>
                             </tableView>
                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="8Ey-gD-VOX">
-                                <rect key="frame" x="0.0" y="130" width="414" height="32.5"/>
+                                <rect key="frame" x="0.0" y="118" width="414" height="32.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREATOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxB-BX-fxr">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
@@ -160,9 +160,20 @@ Label</string>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SE3-2T-fCz">
-                                <rect key="frame" x="351" y="44" width="48" height="30"/>
-                                <state key="normal" title="Logout">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gumroad" translatesAutoresizingMaskIntoConstraints="NO" id="wL1-xw-h7q">
+                                <rect key="frame" x="192" y="38" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hRN-zq-Iy4"/>
+                                    <constraint firstAttribute="width" secondItem="wL1-xw-h7q" secondAttribute="height" id="rci-Kf-5FN"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SE3-2T-fCz">
+                                <rect key="frame" x="381" y="44" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SE3-2T-fCz" secondAttribute="height" id="HZ7-ep-8rd"/>
+                                    <constraint firstAttribute="height" constant="18" id="rxO-Cv-1wm"/>
+                                </constraints>
+                                <state key="normal" image="logout">
                                     <color key="titleColor" red="0.20392156859999999" green="0.63529411759999999" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -173,6 +184,7 @@ Label</string>
                         <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="DrB-au-QqP" firstAttribute="top" secondItem="SE3-2T-fCz" secondAttribute="bottom" id="A5b-Ar-5Yn"/>
+                            <constraint firstItem="wL1-xw-h7q" firstAttribute="centerY" secondItem="SE3-2T-fCz" secondAttribute="centerY" id="H6g-xP-NOo"/>
                             <constraint firstItem="8Ey-gD-VOX" firstAttribute="centerX" secondItem="Mkq-Vh-2gq" secondAttribute="centerX" id="K1g-vd-XQs"/>
                             <constraint firstItem="Mkq-Vh-2gq" firstAttribute="trailing" secondItem="SE3-2T-fCz" secondAttribute="trailing" constant="15" id="Tkl-4A-pTj"/>
                             <constraint firstItem="CYo-9f-rD5" firstAttribute="top" secondItem="DrB-au-QqP" secondAttribute="bottom" id="Ux6-K6-dl6"/>
@@ -181,6 +193,7 @@ Label</string>
                             <constraint firstItem="SE3-2T-fCz" firstAttribute="top" secondItem="Mkq-Vh-2gq" secondAttribute="top" id="Z6W-Z1-RzL"/>
                             <constraint firstItem="Mkq-Vh-2gq" firstAttribute="trailing" secondItem="DrB-au-QqP" secondAttribute="trailing" constant="10" id="feP-LL-g1Q"/>
                             <constraint firstItem="CYo-9f-rD5" firstAttribute="centerX" secondItem="Mkq-Vh-2gq" secondAttribute="centerX" id="gj0-K0-T2q"/>
+                            <constraint firstItem="wL1-xw-h7q" firstAttribute="centerX" secondItem="Mkq-Vh-2gq" secondAttribute="centerX" id="iKu-1I-dLx"/>
                             <constraint firstItem="8Ey-gD-VOX" firstAttribute="width" secondItem="OOK-89-0pB" secondAttribute="width" id="rgQ-Sx-eDh"/>
                             <constraint firstItem="CYo-9f-rD5" firstAttribute="width" secondItem="OOK-89-0pB" secondAttribute="width" id="tFX-m8-Kju"/>
                             <constraint firstItem="DrB-au-QqP" firstAttribute="leading" secondItem="Mkq-Vh-2gq" secondAttribute="leading" constant="2" id="uaT-Sy-dJN"/>
@@ -371,5 +384,7 @@ Label</string>
         <image name="book.fill" catalog="system" width="128" height="100"/>
         <image name="ellipsis" catalog="system" width="128" height="37"/>
         <image name="filter" width="30" height="30"/>
+        <image name="gumroad" width="500" height="500"/>
+        <image name="logout" width="52" height="52"/>
     </resources>
 </document>
